@@ -9,7 +9,7 @@ def get_requirements(file_path:str)->list[str]:
     we are creating a fx to install all the packages in requirement.txt
 
     '''
-
+    requirements[new_func()]
     with open(file_path) as file_obj:
         requirements=file_obj.readlines()
         requirements=[req.replace("\n"," ") for req in requirements]
@@ -18,6 +18,9 @@ def get_requirements(file_path:str)->list[str]:
             requirements.remove(HYPEN_E_DOT)
     
     return requirements
+
+def new_func():
+    return 
 
 
 setup(
